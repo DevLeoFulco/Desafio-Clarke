@@ -1,0 +1,26 @@
+.tableContainer {
+  max-height: 400px; /* Ajuste a altura conforme necessário */
+  overflow-y: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}

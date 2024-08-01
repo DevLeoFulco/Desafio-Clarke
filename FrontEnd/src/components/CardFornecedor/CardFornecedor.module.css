@@ -1,0 +1,46 @@
+.card {
+    border: 1px solid #00DF7C;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .detalhes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nome {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .estado,
+  .avaliacao {
+    font-size: 1rem;
+  }
+
+  .custo{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .minKwh{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .totalCli{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }

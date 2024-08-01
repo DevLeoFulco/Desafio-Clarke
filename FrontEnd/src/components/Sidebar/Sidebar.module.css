@@ -1,0 +1,57 @@
+.sidebar {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 135px;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menuButton {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    text-align: right;
+    padding: 10px 38px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .menuButton:hover{
+    background-color: rgba(0, 223, 124, 0.2);
+  }
+  .menuButton svg {
+    margin-right: 10px; 
+  }
+  
+  .menuItem {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .menuItem:hover {
+    background-color: rgba(0, 223, 124, 0.2);
+  }
+  
+  .menuItem.active {
+    background-color: rgba(0, 223, 124, 0.5);
+  }
+  
