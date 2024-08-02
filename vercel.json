@@ -1,16 +1,17 @@
 {
-    "projects": {
-      "frontend": {
-        "src": "./frontend",
-        "buildCommand": "npm run build",
-        "outputDirectory": "./frontend/build"
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "frontend/build"
+        }
       },
-      "backend": {
-        "src": "./backend",
-        "buildCommand": "python app/main.py",
-        "outputDirectory": "./backend"
+      {
+        "src": "backend/app/main.py",
+        "use": "@vercel/python"
       }
-    },
+    ],
     "rewrites": [
       {
         "source": "/api/(.*)",
