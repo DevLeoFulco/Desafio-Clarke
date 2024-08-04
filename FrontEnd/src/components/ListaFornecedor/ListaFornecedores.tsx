@@ -2,8 +2,33 @@ import React from 'react';
 import styles from './ListaFornecedor.module.css';
 import { Fornecedor } from '../../type';
 
+import logoDefault from '../../assets/logoClarke.png';
+import logo1 from '../../assets/Aneel.png';
+import logo2 from '../../assets/COPEL.jpg';
+import logo3 from '../../assets/CPFL.png';
+import logo4 from '../../assets/Energiza.png';
+import logo5 from '../../assets/Gambiarras.png';
+import logo6 from '../../assets/NEOENERGIA.png';
+import logo7 from '../../assets/Light.png';
+import logo8 from '../../assets/Nomus.jpg';
+import logo9 from '../../assets/Grau.png';
 
+const logos:{ [key: string]: string } = {
+  "Aneel": logo1,
+  "COPEL": logo2,
+  "CPFL": logo3,
+  "Energiza": logo4,
+  "Gambiarras": logo5,
+  "Neo Energia": logo6,
+  "LIGHT": logo7,
+  "Nomus": logo8,
+  "Grau": logo9,
+  
+};
 
+const getLogo = (nome: string): string => {
+  return logos[nome] || logoDefault; 
+};
 interface ListaFornecedorProps {
   fornecedores: Fornecedor[];
 }
@@ -27,7 +52,7 @@ const ListaFornecedor: React.FC<ListaFornecedorProps> = ({ fornecedores }) => {
           {fornecedores.map((fornecedor, index) => (
             <tr key={index}>
               <td>
-                <img src={fornecedor.logo} alt={`${fornecedor.nome} logo`} className={styles.logo} />
+                <img src={getLogo(fornecedor.nome)} alt={`${fornecedor.nome} logo`} className={styles.logo} />
               </td>
               <td>{fornecedor.nome}</td>
               <td>{fornecedor.estado}</td>

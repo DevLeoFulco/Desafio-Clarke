@@ -1,6 +1,7 @@
 .tableContainer {
   max-height: 400px; /* Ajuste a altura conforme necessário */
   overflow-y: auto;
+  overflow-x: auto;
   margin-top: 20px;
   border: 1px solid #ddd;
 }

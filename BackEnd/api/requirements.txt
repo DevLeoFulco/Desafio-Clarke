@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-sqlalchemy
-pydantic
-databases
-psycopg2-binary
-graphene
-starlette-graphene3
-SQLAlchemy
