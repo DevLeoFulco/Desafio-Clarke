@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "builds": [
       {
@@ -20,3 +21,27 @@
     ]
   }
   
+=======
+{
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "frontend/build"
+        }
+      },
+      {
+        "src": "backend/app/main.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/backend/$1"
+      }
+    ]
+  }
+  
+>>>>>>> 19284a31f1e62e932bc3bfc4096bffbc756c04a6
